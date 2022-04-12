@@ -1,0 +1,36 @@
+<DOCTYPE HTML>
+<html>
+    <head>
+        <title>Classes</title>
+    </head>
+    <style>
+        .main{
+            color:wheat;
+            background-color: brown;
+            display: inline;
+        }
+        .mat{
+            color:white;
+            background-color: black;
+        }
+    </style>
+    <body>
+        <p class="main">This is First Paragraph</p>
+        <h1 class="mat">This is Heading    </h1>
+
+        <p class="main"> This is Another paragraph</p>
+
+        <h4 class="mat">This is another Class example of Heading</h4>
+
+        <button onclick="remove()">Remove Heading</button>
+
+        <script>
+            function remove(){
+                var x = document.getElementsByClassName("main");
+                for(i=0;i<x.length;i++){
+                    x[i].style.display="none";
+                }
+            }
+            </script>
+        </body>
+</html> 

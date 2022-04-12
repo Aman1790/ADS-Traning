@@ -1,0 +1,36 @@
+<DOCTYPE HTML>
+    <html>
+        <head>
+            <title>Classes</title>
+        </head>
+        <style>
+            #main{
+                color:wheat;
+                background-color: brown;
+                display: inline;
+            }
+            .mat{
+                color:white;
+                background-color: black;
+            }
+        </style>
+        <body>
+            <p class="mat">This is First Paragraph</p>
+            <h1 class="mat">This is Heading    </h1>
+    
+            <p id="main"> This is Another paragraph</p>
+    
+            <h4 class="mat">This is another Class example of Heading</h4>
+            
+            <button onclick="clea()">Hide</button>
+    
+            <script>
+               function clea(){
+                document.getElementById("main").innerHTML="Welcome to this World";
+                var x=document.getElementById("main");
+                document.getElementById("main").style.backgroundColor="red"
+            }
+                </script>
+            </body>
+    </html> 
+   

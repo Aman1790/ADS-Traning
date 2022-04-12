@@ -1,0 +1,62 @@
+<DOCTYPE HTML>
+    <html>
+
+    <head>
+        <title>Media Query</title>
+    </head>
+
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+.left{
+    background-color: red;
+    padding:10px;
+   
+
+    width:20%;
+    float: left;
+    
+}
+.mid{
+    background-color: greenyellow;
+    padding:10px;
+    float: left;
+    width:60%;
+}
+.right{
+    background-color: blueviolet;
+    padding:10px;
+  
+    width:20%;
+    float:right;
+}
+
+@media screen and (max-width: 700px) {
+  .left, .mid, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+}
+    </style>
+
+    <body>
+
+    <div class="left">
+        <p>Left content</p>
+    </div>
+
+    <div class="mid">
+        <p> Middle part </p>
+        </p>
+    </div>
+    
+    <div class="right">
+        <p>Right part</p>
+    </div>
+
+
+
+    </body>
+    </html>
