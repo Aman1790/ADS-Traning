@@ -1,0 +1,17 @@
+/* This is Element Selector */
+h1{
+    color:yellow;
+}
+/* This is also Element Selector*/
+p{
+    color:red;
+   
+}
+/* This is Universal selector*/
+*{
+background-color: black;
+}
+/* This is Group selector*/
+h1,p{
+    font-weight: bolder;
+}
