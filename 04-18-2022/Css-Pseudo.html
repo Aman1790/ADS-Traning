@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>Pseudo class</title>
+</head>
+<style>
+    h1:hover {
+        background-color: chartreuse;
+    }
+
+    p i:first-child {
+        color: blue;
+    }
+
+    h3::before {
+        content: "Hello world";
+        color: greenyellow;
+
+    }
+
+    h3::after {
+        content: "Live session ended";
+        color: gray;
+        text-transform: capitalize;
+
+    }
+</style>
+
+<body>
+    <h1>Example of Pseudo class </h1>
+    <p>This is my <i>Paragraph</i>. WE are using <b>first child</b> property on this</p>
+    <h3>This is Heading on which we are using pesudo before after property</h3>
+</body>
+
+</html>

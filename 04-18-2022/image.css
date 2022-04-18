@@ -1,0 +1,22 @@
+@media screen and (max-width: 500px) {
+    body{
+       background-color: aqua;
+   }
+   a img{width:100%;}
+}
+.im{
+    display: inline-block;
+    border: 1px solid gray;
+    margin: 20px;
+}
+
+.im:hover {
+    border: 1px solid black;
+}
+
+.im p {
+    text-align: center;
+}
+p::before{
+    content: "white";
+}

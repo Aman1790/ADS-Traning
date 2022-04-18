@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>Counters
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            counter-reset: section;
+        }
+
+        p::before {
+            counter-increment: section;
+            Content: "!",counter(section);
+        }
+    </style>
+</head>
+
+
+<body>
+    <h1>Examples of Counters</h1>
+    <p>This is Paragraph</p>
+    <p>This is another Paragraph</p>
+    <p>This is another paragraph</p>
+    <p>This is Last Paragraph</p>
+
+</body>
+
+</html>

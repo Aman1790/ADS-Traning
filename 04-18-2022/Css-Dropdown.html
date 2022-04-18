@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>Dropdown</title>
+</head>
+<style>
+    .dropdown {
+
+        display: inline-block;
+    }
+
+    .dropbtn {
+        color: white;
+        background-color: chartreuse;
+        padding: 5px;
+        font-size: 20px;
+    }
+
+    .drop-content {
+        position: absolute;
+        z-index: 1;
+        background-color: White;
+        min-width: 83px;
+        display: none;
+    }
+
+    .drop-content a {
+        text-decoration: none;
+        display: block;
+
+
+    }
+
+    .dropbtn:hover .drop-content {
+        display: block;
+        z-index: 1;
+    }
+
+    .dropdown:hover .drop-content {
+        display: block;
+    }
+
+    .drop-content a:hover {
+        background-color: gray;
+        color: white;
+    }
+</style>
+
+<body>
+    <h1>Example of Dropdown </h1>
+    <div class="dropdown">
+        <button class="dropbtn">Student</button>
+        <div class="drop-content">
+            <a href="#">Admin</a>
+            <a href="#">Result</a>
+            <a href="#">Fees</a>
+            <a href="#">Exams</a>
+
+        </div>
+    </div>
+    <h2>This is Second Heading</h2>
+
+</body>
+
+</html>
