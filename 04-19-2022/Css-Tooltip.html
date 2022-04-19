@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>Tooltip
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        p {
+            border-bottom: 2px dotted black;
+            display: inline;
+            position: relative;
+        }
+
+        .tooltip {
+            visibility: hidden;
+            position: absolute;
+            z-index: 1;
+            background-color: black;
+            color: white;
+            margin: 15px 0px 0px 4px;
+        }
+
+        p:hover .tooltip {
+            visibility: visible;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <p>This is <span class="tooltip">Paragraph</span></p>
+
+</body>
+
+</html>

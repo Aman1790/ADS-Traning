@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title> Variable and js
+
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --col: red;
+        }
+
+        h1 {
+          
+            background-color: var(--col);
+        }
+        p{
+            color:var(--col);
+        }
+
+        @media screen And (max-width:800px) {
+
+            p{
+                --col: yellow;
+                color: var(--col);
+            }
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <div>
+        <h1>This is Heading on which we are going to use media queries</h1>
+
+        <p>This is my paragraph</p>
+    </div>
+</body>
+
+</html>

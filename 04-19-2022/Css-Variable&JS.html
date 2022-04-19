@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title> Variable in Media Queries
+
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --colo: red;
+            --bl: lime;
+        }
+
+        p {
+            background-color: var(--colo);
+
+        }
+
+        h2 {
+            color: var(--bl);
+        }
+
+        h1 {
+            --bl: gray;
+            background-color: var(--bl);
+            font-weight: bold;
+            color: white;
+            display: inline;
+        }
+    </style>
+    <script>
+        var r = document.querySelector(':root');
+        function myfun_get() {
+            var rs = getComputedStyle(r);
+            alert("This value of --blue is " + rs.getPropertyValue('--colo'));
+        }
+        function myset() {
+            r.style.setProperty('--colo', 'yellow');
+        }
+    </script>
+</head>
+
+
+<body>
+    <div>
+        <h1>This is Heading</h1>
+        <p>This is Paragraph</p>
+        <h2>This is another Heading</h2>
+
+        <button onclick="myfun_get()">Check the value</button>
+        <button onclick="myset()">Change the Value</button>
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>

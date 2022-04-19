@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title> Over ride Variable
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --colo: red;
+            --bl: lime;
+        }
+
+        p {
+            color: var(--colo);
+
+        }
+
+        h2 {
+            color: var(--bl);
+        }
+
+        h1 {
+            --bl: gray;
+            background-color: var(--bl);
+            font-weight: bold;
+            color: white;
+            display: inline;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div>
+        <h1>This is Heading</h1>
+        <p>This is Paragraph</p>
+        <h2>This is another Heading</h2>
+    </div>
+
+
+
+
+</body>
+
+</html>

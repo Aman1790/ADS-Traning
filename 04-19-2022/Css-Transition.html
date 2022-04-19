@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title> Transitions
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .main {
+            width: 100px;
+            height: 90px;
+            background-color: blueviolet;
+            transition: width 2s;
+            transition-delay: 1s;
+        }
+
+        .main:hover {
+            width: 300px;
+        }
+
+        .trans {
+            height: 90px;
+            width: 100px;
+            background-color: black;
+            color: white;
+            transition: height 4s, width 2s;
+            transition-timing-function: ease-in;
+
+
+        }
+
+        .trans:hover {
+            height: 150px;
+            width: 300px
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="main">
+        <p>This is Paragraph we have to write content here.</p>
+    </div>
+
+
+    <div class="trans">
+        <h1>This is first heading</h1>
+    </div>
+
+
+</body>
+
+</html>
