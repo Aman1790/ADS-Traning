@@ -1,0 +1,371 @@
+
+
+/* icons */
+
+.fa{
+  padding: 10px 20px 10px 20px;
+}
+.fa:hover{
+    font-size:20px;
+    color:wheat;
+
+}
+header {
+    margin: 0;
+    padding: 0;
+    font: 0.75rem Kors Sans Book, Arial, sans-serif;
+    color: #fff;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+p {
+    margin: 0;
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: small;
+    padding: 10px;
+}
+
+p a {
+    color: white;
+    background-color: black;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.country {
+    padding: 10px 0 3px 20px;
+}
+
+/* Brand Name */
+.br {
+
+    padding: 0;
+    text-align: center;
+    align-items: center;
+    font-size: 24px;
+
+}
+
+
+/* ----Links Nav ---------- */
+
+
+.navi {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.navi .com {
+    padding-left: 40px;
+}
+
+.co{
+    font-size: 20px;
+}
+
+
+.com:hover .co{
+    text-decoration:underline ;
+}
+
+/* New */
+.new {
+    cursor: pointer;
+    position: relative;
+}
+
+.newdown li {
+
+    list-style-type: none;
+    line-height: 2;
+}
+
+.newdown li a {
+    text-decoration: none;
+    color: black;
+}
+
+.newdown {
+    height: auto;
+    width: 60%;
+    right: 80px;
+    padding:10px 50px 50px 200px;
+    background-color: white;
+}
+
+.slider {
+    list-style-type: none;
+
+    width: 33%;
+    text-align: center;
+    background-color: wheat;
+}
+
+.slider li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.fornewdropdown:hover .aman {
+    visibility: visible;
+
+}
+
+.aman {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    visibility: hidden;
+    position: absolute;
+    background-color: white;
+    right:1px;
+
+
+}
+
+/* ----Women--- */
+
+.newwomen {
+
+    height: auto;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    padding: 20px;
+    right: 199px;
+    background-color: white;
+    justify-content: space-between;
+
+}
+
+
+.womain {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    visibility: hidden;
+    position: absolute;
+    background-color: white;
+    right: 1px;
+
+
+
+}
+
+.newwomen li {
+    list-style-type: none;
+}
+
+.newwomen li a {
+    text-decoration: none;
+    color: black;
+}
+
+.content {
+    align-content: center;
+}
+
+
+
+.sliderwo {
+    list-style-type: none;
+    padding: 50px;
+    width: 20%;
+    text-align: center;
+    background-color: wheat;
+}
+
+.sliderwo li a {
+    text-decoration: none;
+    color: black;
+}
+
+.women:hover .womain {
+    visibility: visible;
+}
+
+
+
+
+/* Men */
+
+.newmen {
+
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    padding: 20px;
+    right: 1px;
+    background-color: white;
+    justify-content: space-between;
+
+}
+
+
+.newmen li {
+    list-style-type: none;
+}
+
+.newmen li a {
+    text-decoration: none;
+    color: black;
+}
+
+.content {
+    align-content: center;
+}
+
+
+.sliderme {
+    list-style-type: none;
+    padding: 50px;
+    width: 20%;
+    text-align: center;
+    background-color: wheat;
+}
+
+.sliderme li a {
+    text-decoration: none;
+    color: black;
+}
+
+.maindrop {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    visibility: hidden;
+    position: absolute;
+    background-color: white;
+    right: 1px;
+
+
+
+}
+
+
+
+.men:hover .maindrop {
+    visibility: visible;
+
+}
+
+
+/* kid */
+
+
+.kidsdrop {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    visibility: hidden;
+    position: absolute;
+    background-color: white;
+    right: 1px;
+
+}
+
+
+
+.kid:hover .kidsdrop {
+    visibility: visible;
+
+}
+
+
+.newkid{
+    
+    height: auto;
+    width: 100%;
+    
+    position: absolute;
+
+    right:1px;
+}
+    
+
+.sliderKid  {
+    padding: 223px 0 0 299px;
+   
+}
+.sliderkid h3{
+    padding: 139px 156px 30px 170px;
+    font-size: 40px;
+}
+
+
+
+/* Collection */
+
+.newcoll {
+
+    height: auto;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    padding: 20px;
+    right: 1px;
+    background-color: white;
+    justify-content: space-between;
+
+}
+
+
+.newcoll li {
+    list-style-type: none;
+}
+
+.newcoll li a {
+    text-decoration: none;
+    color: black;
+}
+
+.content {
+    align-content: center;
+}
+
+
+.slidercoll {
+    list-style-type: none;
+    padding: 50px;
+    width: 20%;
+    text-align: center;
+    background-color: wheat;
+}
+
+.slidercoll li a {
+    text-decoration: none;
+    color: black;
+}
+.Colldrop {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    visibility: hidden;
+    position: absolute;
+    background-color: white;
+    right: 1px;
+
+
+
+}
+
+
+
+.coll:hover .colldrop {
+    visibility: visible;
+
+}

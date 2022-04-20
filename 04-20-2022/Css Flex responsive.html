@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title> Flex Responsive
+
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .con {
+            display: flex;
+            background-color: aqua;
+            justify-content:center;
+            align-items: center;
+            height:200px;
+            
+        }
+        .shr {
+            flex-shrink: 2;
+        }
+
+        .item {
+            justify-content:center;
+           text-align: center;
+            margin: 10px;
+            background-color: blueviolet;
+            height: 50px;
+            width: 100px;
+           
+        }
+
+        @media (max-width: 800px) {
+            .con{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="con">
+        <div class="item shr">1</div>
+        <div class="item" >2</div>
+        <div class="item">3</div>
+    </div>
+
+</body>
+
+</html>
