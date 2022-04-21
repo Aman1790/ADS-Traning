@@ -1,0 +1,78 @@
+<DOCTYPE HTML>
+    <html lang="en">
+
+    <head>
+        <title>
+            Flex rows columns
+        </title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .con {
+                display: grid;
+                height: 800px;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 100px 1fr 1fr;
+
+
+            }
+
+
+            .header {
+                border: 2px solid;
+                grid-column-start: 1;
+                grid-column-end: 4;
+                background-color: aqua;
+                text-align: center;
+            }
+
+            .item2 {
+                border: 2px solid;
+                grid-row-start: 2;
+                grid-row-end: 4;
+                background-color: aquamarine;
+                text-align: center;
+                padding-top: 200px;
+            }
+
+            .item3 {
+                border: 2px solid;
+                grid-row-start: 2;
+                grid-row-end: 4;
+                grid-column-start: 2;
+                grid-column-end: 4;
+                text-align: center;
+                padding-top: 200px;
+
+            }
+
+            .footer {
+                border: 2px solid;
+                grid-column-start: 1;
+                grid-column-end: 4;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="con">
+            <div class="header">
+                <h1>This is Header</h1>
+            </div>
+            <div class="item2">
+                <h2>This is Side Nav </h2>
+            </div>
+            <div class="item3">
+                <h2>This is content</h2>
+            </div>
+            <div class="footer">
+                <p>This is footer</p>
+            </div>
+
+        </div>
+
+    </body>
+
+    </html>

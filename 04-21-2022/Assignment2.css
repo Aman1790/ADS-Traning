@@ -1,0 +1,754 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* icons */
+
+.fa {
+    padding: 10px 20px 10px 20px;
+}
+
+.fa:hover {
+    font-size: 20px;
+    color: wheat;
+
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    font: 0.75rem Kors Sans Book, Arial, sans-serif;
+    color: #fff;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+p {
+    margin: 0;
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: small;
+    padding: 10px;
+}
+
+p a {
+    color: white;
+    background-color: black;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.country {
+    padding: 10px 0 3px 20px;
+}
+
+.cmain {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 1fr 1fr;
+    
+}
+.citm2{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+/* .cmain input::before{
+   content: <i class="fas fa-search" aria-hidden="true"></i>;
+} */
+
+
+
+.btn {
+    font-size: 33px;
+    background: transparent;
+    border: none;
+    float: right;
+    position: absolute;
+    right: 58px;
+    top: 25px;
+}
+
+/* Brand Name */
+.br {
+
+    padding: 0;
+    text-align: center;
+    align-items: center;
+    font-size: 24px;
+
+}
+
+
+/* ----Links Nav ---------- */
+.humburger{
+    visibility:hidden;
+}
+
+.navi {
+    display: flex;
+    position: relative;
+    visibility: visible;
+    justify-content: center;
+
+}
+@media screen and (max-width:1200px) {
+    .navi{
+        visibility: hidden;
+    } 
+     .humburger{
+        visibility: visible;
+    }
+}
+
+.navi .com {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+    display: inline-block;
+
+    font-family: Kors Sans Medium, Arial, sans-serif;
+    display: block;
+    padding: 20px;
+
+}
+
+.co {
+    font-size: 15px;
+    padding: 6px;
+    font-weight: bolder;
+
+}
+
+
+.com:hover .co {
+    text-decoration: underline;
+}
+
+/* Responsive */
+
+
+.nav {
+    position: sticky;
+    top: 0px;
+    width: 100vw;
+    background-color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+    .navi {
+        display: block;
+        position: absolute;
+        height: 100vh;
+        width: 200px;
+        background-color: white;
+    }
+
+}
+
+
+
+
+
+/* New */
+.new {
+    cursor: pointer;
+    position: relative;
+}
+
+.newdown li {
+
+    list-style-type: none;
+    line-height: 2;
+}
+
+.newdown li a {
+    line-height: inherit;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.newdown {
+    height: auto;
+    width: 60%;
+    right: 80px;
+    padding: 10px 50px 50px 200px;
+    background-color: white;
+}
+
+.slider {
+    list-style-type: none;
+
+    width: 33%;
+    text-align: center;
+    background-color: wheat;
+}
+
+.slider li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.fornewdropdown:hover .aman {
+    visibility: visible;
+
+}
+
+.aman {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    visibility: hidden;
+    position: absolute;
+    background-color: white;
+    right: 1px;
+
+
+}
+
+/* ----Women--- */
+
+.newwomen {
+
+    height: auto;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    padding: 20px;
+    right: 199px;
+    background-color: white;
+    justify-content: space-between;
+
+}
+
+
+.womain {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    visibility: hidden;
+    position: absolute;
+    background-color: white;
+    right: 1px;
+
+
+
+}
+
+.newwomen li {
+    list-style-type: none;
+}
+
+.newwomen li a {
+    text-decoration: none;
+    color: black;
+}
+
+.content {
+    align-content: center;
+}
+
+
+
+.sliderwo {
+    list-style-type: none;
+    padding: 50px;
+    width: 20%;
+    text-align: center;
+    background-color: wheat;
+}
+
+.sliderwo li a {
+    text-decoration: none;
+    color: black;
+}
+
+.women:hover .womain {
+    visibility: visible;
+}
+
+
+
+
+/* Men */
+
+.newmen {
+
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    padding: 20px;
+    right: 1px;
+    background-color: white;
+    justify-content: space-between;
+
+}
+
+
+.newmen li {
+    list-style-type: none;
+}
+
+.newmen li a {
+    text-decoration: none;
+    color: black;
+}
+
+.content {
+    align-content: center;
+}
+
+
+.sliderme {
+    list-style-type: none;
+    padding: 50px;
+    width: 20%;
+    text-align: center;
+    background-color: rgb(218, 217, 228);
+}
+
+.sliderme li a {
+    text-decoration: none;
+    color: black;
+}
+
+.maindrop {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    visibility: hidden;
+    position: absolute;
+    background-color: white;
+    right: 1px;
+
+
+
+}
+
+
+
+.men:hover .maindrop {
+    visibility: visible;
+
+}
+
+
+/* kid */
+
+
+.kidsdrop {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    padding: 10px;
+    visibility: hidden;
+    position: absolute;
+    background-color: rgb(148, 144, 144);
+    right: 1px;
+
+}
+
+
+
+.kid:hover .kidsdrop {
+    visibility: visible;
+}
+
+
+.newkid {
+
+    height: auto;
+    width: 100%;
+
+    position: absolute;
+
+    right: 1px;
+}
+
+
+.sliderKid {
+    padding: 223px 0 0 299px;
+
+}
+
+.sliderkid h3 {
+    padding: 139px 156px 30px 170px;
+    font-size: 40px;
+    color: white
+}
+
+
+
+/* Collection */
+
+.newcoll {
+
+    height: auto;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    padding: 20px;
+    right: 1px;
+    background-color: white;
+    justify-content: space-between;
+
+}
+
+
+.newcoll li {
+    list-style-type: none;
+}
+
+.newcoll li a {
+    text-decoration: none;
+    color: black;
+}
+
+.content {
+    align-content: center;
+}
+
+
+.slidercoll {
+    list-style-type: none;
+    padding: 40px;
+    width: 20%;
+    text-align: center;
+    background-color: wheat;
+}
+
+.slidercoll li a {
+    text-decoration: none;
+    color: black;
+}
+
+.Colldrop {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    visibility: hidden;
+    position: absolute;
+    background-color: white;
+    right: 1px;
+}
+
+.coll:hover .Colldrop {
+    visibility: visible;
+}
+
+/* Handbags */
+
+
+.newhand {
+
+    height: auto;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    padding: 41px 0px 0 111px;
+    right: 1px;
+    background-color: white;
+    justify-content: space-around;
+
+}
+
+
+.newhand li {
+    list-style-type: none;
+}
+
+.newhand li a {
+    text-decoration: none;
+    color: black;
+}
+
+.content {
+    align-content: center;
+}
+
+
+.sliderhand {
+    list-style-type: none;
+    padding: 40px;
+    width: 20%;
+    text-align: center;
+    background-color: wheat;
+}
+
+.sliderhand li a {
+    text-decoration: none;
+    color: black;
+}
+
+.handdrop {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    visibility: hidden;
+    position: absolute;
+    background-color: white;
+    right: 1px;
+}
+
+.hand:hover .handdrop {
+    visibility: visible;
+}
+
+
+/* Shoes */
+
+.newshoe {
+    row-gap: 10px;
+    height: auto;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    padding: 41px 0px 0 111px;
+    right: 1px;
+    background-color: white;
+    justify-content: space-evenly;
+
+}
+
+
+.newshoe li {
+    list-style-type: none;
+}
+
+.newshoe li a {
+    text-decoration: none;
+    color: black;
+}
+
+.content {
+    align-content: center;
+}
+
+
+.slidershoe {
+    list-style-type: none;
+    padding: 40px;
+    width: 20%;
+    text-align: center;
+    background-color: wheat;
+}
+
+.slidershoe li a {
+    text-decoration: none;
+    color: black;
+}
+
+.shoedrop {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 350px;
+    ;
+    visibility: hidden;
+    position: absolute;
+    background-color: white;
+    right: 1px;
+}
+
+.shoe:hover .shoedrop {
+    visibility: visible;
+}
+
+
+/* Accessories */
+
+.newacce {
+    row-gap: 10px;
+    height: auto;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    padding: 41px 0px 0 111px;
+    right: 1px;
+    background-color: white;
+    justify-content: space-evenly;
+
+}
+
+
+.newacce li {
+    list-style-type: none;
+}
+
+.newacce li a {
+    text-decoration: none;
+    color: black;
+}
+
+.content {
+    align-content: center;
+}
+
+
+.slideracce {
+    list-style-type: none;
+    padding: 40px;
+    width: 20%;
+    text-align: center;
+    background-color: wheat;
+}
+
+.slideracce li a {
+    text-decoration: none;
+    color: black;
+}
+
+.accedrop {
+    display: flex;
+    position: absolute;
+    width: 100%;
+
+    visibility: hidden;
+    position: absolute;
+    background-color: white;
+    right: 1px;
+}
+
+.acce:hover .accedrop {
+    visibility: visible;
+}
+
+
+/* Watches */
+
+.newwatc {
+    row-gap: 10px;
+    height: auto;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    padding: 41px 0px 0 111px;
+    right: 1px;
+    background-color: white;
+    justify-content: space-evenly;
+
+}
+
+
+.newwatc li {
+    list-style-type: none;
+}
+
+.newwatc li a {
+    text-decoration: none;
+    color: black;
+}
+
+.content {
+    align-content: center;
+}
+
+
+.sliderwatc {
+    list-style-type: none;
+    padding: 40px;
+    width: 20%;
+    text-align: center;
+    background-color: wheat;
+}
+
+.sliderwatc li a {
+    text-decoration: none;
+    color: black;
+}
+
+.watcdrop {
+    display: flex;
+    position: absolute;
+    width: 100%;
+
+    visibility: hidden;
+    position: absolute;
+    background-color: white;
+    right: 1px;
+}
+
+.watc:hover .watcdrop {
+    visibility: visible;
+}
+
+/* Gifts */
+
+.newgift {
+    row-gap: 10px;
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 41px 0px 0 111px;
+    right: 1px;
+    background-color: white;
+    justify-content: space-evenly;
+
+}
+
+
+.newgift li {
+    list-style-type: none;
+}
+
+.newgift li a {
+    text-decoration: none;
+    color: black;
+}
+
+.content {
+    align-content: center;
+}
+
+
+.giftdrop {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    visibility: hidden;
+    position: absolute;
+    background-color: white;
+    right: 1px;
+}
+
+.gift:hover .giftdrop {
+    visibility: visible;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Country  */
+
+.cntry {
+    background: white;
+    position: absolute;
+    height: 900px;
+    right: 80px;
+    width: 90%;
+    z-index: 1;
+    visibility: hidden;
+}
