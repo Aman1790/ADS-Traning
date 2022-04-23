@@ -1,0 +1,36 @@
+<DOC TYPE html>
+    <html lang="en">
+
+    <head>
+
+        <title>
+            String trim
+        </title>
+
+    </head>
+
+
+    <body>
+
+        <label for="inp">Enter a string</label><input type="text" id="inp">
+         <button onclick="st()">Trim</button>
+
+        <h1>String is: <span id="out"></span></h1>
+
+
+        <script>
+
+            // string 
+            function st() {
+                let text = document.getElementById("inp").value;
+               
+
+
+                m = text.trim();
+                document.getElementById("out").innerHTML = m;
+            }
+
+        </script>
+    </body>
+
+    </html>

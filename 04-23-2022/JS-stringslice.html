@@ -1,0 +1,44 @@
+<DOC TYPE html>
+    <html lang="en">
+
+    <head>
+
+        <title>
+            String Splice
+        </title>
+
+    </head>
+
+
+    <body>
+       
+        <input type="text" id="inp">  <button onclick="st()">splice</button>
+
+        <h1 >String slice is: <span id="out"></span></h1>
+      
+        
+        <h1 >String substring is: <span id="out2"></span></h1>
+      
+        <button onclick="str()">Substring</button>
+        <script>
+            
+          function st(){
+            let text = document.getElementById("inp").value;
+            let y= text.slice(2,8);
+            document.getElementById("out").innerHTML = y;
+          }
+
+          function str(){
+            let text = document.getElementById("inp").value;
+            let y= text.substr(3,4);
+            document.getElementById("out2").innerHTML = y;
+          }
+
+
+
+
+
+        </script>
+    </body>
+
+    </html>

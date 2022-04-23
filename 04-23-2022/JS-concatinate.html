@@ -1,0 +1,39 @@
+<DOC TYPE html>
+    <html lang="en">
+
+    <head>
+
+        <title>
+            String concatinate
+        </title>
+
+    </head>
+
+
+    <body>
+
+        <label for="inp">Enter a string</label><input type="text" id="inp">
+        <label for="inp2">Enter another string</label><input type="text" id="inp1">
+
+
+        <button onclick="st()">concatinate</button>
+
+        <h1>String is: <span id="out"></span></h1>
+
+
+        <script>
+
+            // string 
+            function st() {
+                let text = document.getElementById("inp").value;
+                let y = document.getElementById("inp1").value;
+
+
+                m = text.concat(" ", y);
+                document.getElementById("out").innerHTML = m;
+            }
+
+        </script>
+    </body>
+
+    </html>

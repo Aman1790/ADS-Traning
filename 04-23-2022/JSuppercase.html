@@ -1,0 +1,42 @@
+<DOC TYPE html>
+    <html lang="en">
+
+    <head>
+
+        <title>
+            String uppercase
+        </title>
+
+    </head>
+
+
+    <body>
+
+        <label for="inp">Enter a string</label><input type="text" id="inp">
+
+
+        <button onclick="st()">Upper</button>
+
+
+        <h1>Uppercase is: <span id="out"></span></h1>
+        <button onclick="lo()">Lower</button>
+
+        <h1>LowerCase is: <span id="out1"></span></h1>
+        <script>
+
+            // string 
+            function st() {
+                var text = document.getElementById("inp").value;
+                m = text.toUpperCase();
+                document.getElementById("out").innerHTML = m;
+            }
+
+            function lo() {
+                var text = document.getElementById("inp").value;
+                z = text.toLowerCase();
+                document.getElementById("out1").innerHTML = z;
+            }
+        </script>
+    </body>
+
+    </html>

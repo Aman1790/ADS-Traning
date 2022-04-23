@@ -1,0 +1,38 @@
+<DOC TYPE html>
+    <html lang="en">
+
+    <head>
+
+        <title>
+            String Replace
+        </title>
+
+    </head>
+
+
+    <body>
+
+        <label for="inp">Enter a string</label><input type="text" id="inp">
+        <label for="inp2">Enter a string you want to replace with</label><input type="text" id="inp1">
+        <label for="inp3">Enter a string you want to replace </label><input type="text" id="inp2">
+
+        <button onclick="st()">Replace</button>
+
+        <h1>String slice is: <span id="out"></span></h1>
+
+
+        <script>
+
+            // string 
+            function st() {
+                let text = document.getElementById("inp").value;
+                let y = document.getElementById("inp1").value;
+                let z = document.getElementById("inp2").value;
+
+                m = text.replace(y, z);
+                document.getElementById("out").innerHTML = m;
+            }
+        </script>
+    </body>
+
+    </html>

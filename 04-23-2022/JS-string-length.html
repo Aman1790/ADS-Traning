@@ -1,0 +1,29 @@
+<DOC TYPE html>
+  <html lang="en">
+
+  <head>
+
+    <title>
+      String
+    </title>
+
+  </head>
+
+
+  <body>
+
+    <input type="text" id="inp"> <button onclick="st()">Count</button>
+
+    <h1>String length is: <span id="out"></span></h1>
+
+
+    <script>
+      function st() {
+        let text = document.getElementById("inp").value;
+        document.getElementById("out").innerHTML = text.length;
+      }
+
+    </script>
+  </body>
+
+  </html>
