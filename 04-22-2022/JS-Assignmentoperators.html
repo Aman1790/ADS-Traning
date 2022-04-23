@@ -1,0 +1,41 @@
+<DOC TYPE html>
+    <html lang="en">
+
+    <head>
+        <title>JS- Assignmet  Operators
+        </title>
+
+    </head>
+
+
+    <body>
+        <h1> Assignment Operators In JS</h1>
+
+        <p id="demo">s</p>
+
+        <script>
+            let a,s,m,d,z,x;
+            z=10;
+            a=z+=5;
+            s=z-=5;
+         
+            d=z/=5;
+            m=z*=5;
+
+
+            function inpu(){
+                document.getElementById('demo').innerHTML= "z = 10<br>   sum is z+=5 <br> subtract  z-=5 <br>divident is  z/=5 <br> multiplication is  z*=5"
+         
+           
+            }
+            
+            document.getElementById('demo').innerHTML= "input is " +z+"<br>sum is = "+a+ "<br>Subtraction is " +s+"<br>multiplication is "
+            +m+"<br>divident is "+d;
+            </script>
+
+
+<p id="demo"></p>
+       <button onclick=inpu()>Check input</button>
+    </body>
+
+    </html>

@@ -1,0 +1,60 @@
+<DOC TYPE html>
+    <html lang="en">
+
+    <head>
+
+        <title>
+            Events
+        </title>
+
+    </head>
+
+
+    <body>
+        <div id="main">
+
+            <h1 onclick=ab() id="had">Example of Events Click Here </h1>
+            
+            <p id="para" onmouseover="ac()" onmouseout="blr()" >Move Here</p>
+            
+
+           <button onclick="cen()">Align</button>
+        </div>
+
+
+
+        <script>
+
+            var ab = () => {
+
+                var a = document.getElementById('had').style;
+
+                if (a.backgroundColor == "") {
+                    a.backgroundColor = "yellow";
+                }
+
+                else { a.backgroundColor = "" }
+
+            }
+
+           var  ac=() =>{
+                var z= document.getElementById('para').style
+                z.backgroundColor="gray";
+                
+
+            }
+            var blr =()=>{
+                var z= document.getElementById('para').style
+                z.backgroundColor="";
+            }
+
+            var cen =() => {
+                var r= document.getElementById('main').style;
+                r.textAlign="center";
+            }
+
+
+        </script>
+    </body>
+
+    </html>
