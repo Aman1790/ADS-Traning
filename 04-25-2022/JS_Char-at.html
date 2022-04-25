@@ -1,0 +1,39 @@
+<DOC TYPE html>
+    <html lang="en">
+
+    <head>
+
+        <title>
+            String Position
+        </title>
+
+    </head>
+
+
+    <body>
+
+        <label for="inp">Enter a string</label><input type="text" id="inp">
+        <label for="inp2">Enter Position</label><input type="text" id="inp1">
+
+
+        <button onclick="st()">Find</button>
+
+        <h1>Char is: <span id="out"></span></h1>
+
+
+        <script>
+
+            // string 
+            function st() {
+                let text = document.getElementById("inp").value;
+                let y = document.getElementById("inp1").value;
+
+
+                m = text.charAt(y);
+                document.getElementById("out").innerHTML = m;
+            }
+
+        </script>
+    </body>
+
+    </html>

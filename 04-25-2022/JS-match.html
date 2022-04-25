@@ -1,0 +1,34 @@
+<DOC TYPE html>
+    <html lang="en">
+
+    <head>
+
+        <title>
+            Match
+        </title>
+
+    </head>
+    <body>
+
+        <label for="inp">Enter a string</label><input type="text" id="inp">
+        <label for="inp2">Search </label><input type="text" id="inp1">
+
+
+        <button onclick="st()">Find</button>
+
+        <h1>Index is: <span id="out"></span></h1><br>
+
+        <script>
+
+            // string 
+            function st() {
+                let text = document.getElementById("inp").value;
+                m = text.match(/is/g);
+
+                document.getElementById("out").innerHTML = m;
+            }
+
+        </script>
+    </body>
+
+    </html>

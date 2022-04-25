@@ -1,0 +1,40 @@
+<DOC TYPE html>
+    <html lang="en">
+
+    <head>
+
+        <title>
+            Text Split
+        </title>
+
+    </head>
+
+
+    <body>
+
+        <label for="inp">Enter a string</label><input type="text" id="inp">
+        <label for="inp2">Enter the Spliting Symbol</label><input type="text" id="inp1">
+        <label for="inp2">Enter the Array index </label><input type="text" id="inp2">
+
+        <button onclick="st()">Find</button>
+
+        <h1>String is: <span id="out"></span></h1>
+
+
+        <script>
+
+            // string 
+            function st() {
+                let text = document.getElementById("inp").value;
+                let y = document.getElementById("inp1").value;
+                let z = document.getElementById("inp2").value;
+
+
+                const m = text.split(y);
+                document.getElementById("out").innerHTML = m[z];
+            }
+
+        </script>
+    </body>
+
+    </html>

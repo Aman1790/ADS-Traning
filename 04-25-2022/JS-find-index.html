@@ -1,0 +1,41 @@
+<DOC TYPE html>
+    <html lang="en">
+
+    <head>
+
+        <title>
+            Find Index
+        </title>
+
+    </head>
+
+
+    <body>
+
+        <label for="inp">Enter a string</label><input type="text" id="inp">
+        <label for="inp2">Enter the Finding index </label><input type="text" id="inp1">
+
+
+        <button onclick="st()">Find</button>
+
+        <h1>Index is: <span id="out"></span></h1><br>
+        <h1> Last Index is: <span id="out1"></span></h1>
+
+        <script>
+
+            // string 
+            function st() {
+                let text = document.getElementById("inp").value;
+                let y = document.getElementById("inp1").value;
+
+
+                n = text.lastIndexOf(y)
+                m = text.indexOf(y);
+                document.getElementById("out1").innerHTML = n;
+                document.getElementById("out").innerHTML = m;
+            }
+
+        </script>
+    </body>
+
+    </html>

@@ -1,0 +1,40 @@
+<DOC TYPE html>
+    <html lang="en">
+
+    <head>
+
+        <title>
+            Search
+        </title>
+
+    </head>
+
+
+    <body>
+
+        <label for="inp">Enter a string</label><input type="text" id="inp">
+        <label for="inp2">Search </label><input type="text" id="inp1">
+
+
+        <button onclick="st()">Find</button>
+
+        <h1>Index is: <span id="out"></span></h1><br>
+
+
+        <script>
+
+            // string 
+            function st() {
+                let text = document.getElementById("inp").value;
+                let y = document.getElementById("inp1").value;
+
+
+                m = text.search(y);
+              
+                document.getElementById("out").innerHTML = m;
+            }
+
+        </script>
+    </body>
+
+    </html>
