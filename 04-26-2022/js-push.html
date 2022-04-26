@@ -1,0 +1,34 @@
+<DOCTYPE HTML>
+  <html>
+    <head>
+      <title>Array Methods</title>
+    </head>
+
+    <body>
+      <h1>This is Heading</h1>
+
+      <p id="ou"></p>
+
+      <script>
+        const arr = ["ram", "mohan", "shyam", "mohit"];
+
+        arr.push("aman");
+        document.getElementById("ou").innerHTML = arr;
+        arr.pop();
+
+        document.write(arr);
+      </script>
+      <h2>Shift/unshift</h2>
+      <p id="ou2"></p>
+
+      <script>
+           const ary = ["ram", "mohan", "shyam", "mohit"];
+        ary.shift();
+        document.getElementById("ou2").innerHTML = ary;
+        ary.unshift("mango");
+        document.write(ary);
+
+      </script>
+    </body>
+  </html>
+</DOCTYPE>

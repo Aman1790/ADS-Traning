@@ -1,0 +1,32 @@
+<DOCTYPE HTML>
+  <html>
+    <head>
+      <title>Array Methods</title>
+    </head>
+
+    <body>
+      <h1>Concatination</h1>
+
+      <p id="ou"></p>
+
+      <script>
+        const arr = ["ram", "mohan", "shyam", "mohit"];
+        const ary = ["raman", "mohit", "sita", "men"];
+
+        document.write(arr.concat(ary));
+      </script>
+
+      <p id="sp"></p>
+      <script>
+        const ar = ["ram", "mohan", "shyam", "mohit"];
+        ar.splice(2, 0, "Lemon", "Kiwi");
+        document.getElementById("sp").innerHTML = ar;
+
+
+
+        const nw = ar.slice(3);
+        document.write(nw);
+      </script>
+    </body>
+  </html>
+</DOCTYPE>
