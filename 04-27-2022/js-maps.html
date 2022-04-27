@@ -1,0 +1,31 @@
+<DOCTYPE HTML>
+  <html>
+    <head>
+      <title>Map</title>
+    </head>
+    <body>
+      <h1>This is example of Maps</h1>
+    </body>
+    <script>
+      const app = new Map([
+        ["value", 800],
+        ["b", 300],
+        ["or", 200],
+      ]);
+
+      document.write(app.get("b"));
+
+      let text = "";
+      app.forEach(function (value, key) {
+        text += "<br>" + key + "=>" + value + "<br>";
+      });
+      document.write(text);
+
+let te="";
+for(const x of app.entries( )){
+  te+="<br>"+x;
+}
+document.write(te);
+    </script>
+  </html>
+</DOCTYPE>

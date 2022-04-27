@@ -1,0 +1,29 @@
+<DOCTYPE HTML>
+  <html>
+    <head>
+      <title>Break</title>
+    </head>
+    <body>
+      <h1>This is example of Break</h1>
+    </body>
+    <script>
+      let text = "";
+      for (let i = 0; i < 10; i++) {
+        if (i === 5) {
+          break;
+        }
+        text += "The number is " + i + "<br>";
+      }
+      document.write(text);
+
+      let te = "";
+      for (let a = 0; a < 8; a++) {
+        if (a === 4) {
+          continue;
+        }
+        te += "out is " + a + "<br>";
+      }
+      document.write(te);
+    </script>
+  </html>
+</DOCTYPE>
