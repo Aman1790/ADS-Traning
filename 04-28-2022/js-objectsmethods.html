@@ -1,0 +1,22 @@
+<DOCTYPE HTML>
+  <html>
+    <head>
+      <title>Objects Methods</title>
+    </head>
+    <body>
+      <h1>This is example of Objects Methods</h1>
+    </body>
+    <script>
+      const person = { name: "RAM", lastname: "Kumar", age: 23 };
+      person.contact = function () {
+        return this.name + "<br>" + this.lastname;
+      };
+      let text = "";
+      for (let x in person) {
+        text += person[x] + "<br>";
+      }
+      document.write(text);
+      // document.write(person.contact())
+    </script>
+  </html>
+</DOCTYPE>

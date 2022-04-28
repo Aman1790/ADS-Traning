@@ -1,0 +1,27 @@
+<DOCTYPE HTML>
+  <html>
+    <head>
+      <title>Objects</title>
+    </head>
+    <body>
+      <h1>This is example of Objects</h1>
+    </body>
+    <script>
+      const person = {
+        name: "RAM",
+        lastname: "Kumar",
+        age: 23,
+        contact: {
+          his: 789456,
+          ind: 5655,
+        },
+      };
+      let text = "";
+      for (let x in person) {
+        text += person[x] + "<br>";
+      }
+      document.write(text);
+      document.write(person.contact.his);
+    </script>
+  </html>
+</DOCTYPE>

@@ -1,0 +1,15 @@
+<DOCTYPE HTML>
+  <html>
+    <head>
+      <title>Modules</title>
+    </head>
+    <body>
+      <h1>This is example of Module import</h1>
+      <p id="demo"></p>
+    </body>
+    <script type="module" src="person.js">
+      import message from './person.js';
+      document.getElementById("demo").innerHTML = message();
+    </script>
+  </html>
+</DOCTYPE>

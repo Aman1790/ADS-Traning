@@ -1,0 +1,26 @@
+<DOCTYPE HTML>
+    <html>
+      <head>
+        <title>Class Method</title>
+      </head>
+      <body>
+        <h1>This is example of Class</h1>
+      </body>
+      <script>
+        class Car {
+          constructor(name, year) {
+            this.names = name;
+            this.years = year;
+          }
+          age() {
+    let date = new Date();
+    return date.getFullYear() - this.years;
+  }
+          }
+        
+        const my = new Car("ford", 2000);
+        document.write(my.age()  + "<br>" + my.years);
+      </script>
+    </html>
+  
+  

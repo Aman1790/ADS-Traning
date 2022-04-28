@@ -1,0 +1,24 @@
+<DOCTYPE HTML>
+  <html>
+    <head>
+      <title>OBJ Accessors</title>
+    </head>
+    <body>
+      <h1>This is example of Objects Display</h1>
+    </body>
+    <script>
+      const person = {
+        name: "RAM",
+        lastname: "Kumar",
+        age: 23,
+        language:"no",
+        get lang(){
+            return this.language.toUpperCase();
+        }
+        
+      };
+
+      document.write(person.lang);  
+    </script>
+  </html>
+</DOCTYPE>
