@@ -1,0 +1,26 @@
+<DOCTYPE HTML>
+  <html>
+    <head>
+      <title>Functions</title>
+    </head>
+    <body>
+      <h1>This is example of function Bimd</h1>
+    </body>
+    <script>
+      const person = {
+        firstname: "RAM",
+        lastname: "Kumar",
+        fullname: function () {
+          return ( this.firstname +" " + this.lastname  );
+        }
+      };
+
+      const per2 = {
+        firstname: "Abhi",
+        lastname: "singh",
+      };
+      let y=person.fullname.bind(per2);
+      document.write(y());
+    </script>
+  </html>
+</DOCTYPE>

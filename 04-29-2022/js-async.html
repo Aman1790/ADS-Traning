@@ -1,0 +1,24 @@
+<DOCTYPE HTML>
+    <html>
+      <head>
+        <title>Async</title>
+      </head>
+      <body>
+        <h1>This is example of Async</h1>
+        <p id="demo"></p>
+      </body>
+      <script>
+      function mydisplay(some){
+          document.write(some)
+      };
+
+      async function myfunc(){return("Hello World")}
+
+      myfunc().then(
+          function(value){mydisplay(value)},
+          function(erroe){mydisplay(erroe)}
+      )
+      </script>
+    </html>
+  </DOCTYPE>
+  

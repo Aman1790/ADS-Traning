@@ -1,0 +1,31 @@
+
+<DOCTYPE HTML>
+    <html>
+      <head>
+        <title>Functions</title>
+      </head>
+      <body>
+        <h1>This is example of function call</h1>
+        <p id="demo"></p>
+      </body>
+      <script>
+      const person = {
+          fullname: function(a,b){
+              return (this.firstname+" "+this.lastname +" city is "+a+" country  "+b)
+          }
+      }
+      const per1={
+          firstname:"RAM",
+          lastname:"Kumar"
+      }
+
+      const per2={
+          firstname:"Abhi",
+          lastname:"singh"
+      }
+
+      document.write(person.fullname.call(per2,"abc","India "));
+      </script>
+    </html>
+  </DOCTYPE>
+  
