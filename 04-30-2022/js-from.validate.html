@@ -1,0 +1,23 @@
+<DOCTYPE HTML>
+  <html>
+    <head>
+      <title>Form validate</title>
+    </head>
+    <body>
+      <h1>This is example of Form</h1>
+      <form onsubmit="formvalidate()" action="/action_page.php" method="post">
+        <input type="text" id="te" />
+        <button type="submit" value="submit">Submit</button>
+      </form>
+    </body>
+    <script>
+      function formvalidate() {
+        let x = document.getElementById("te").value;
+        if (x == "") {
+          alert("Enter a value");
+          return false;
+        }
+      }
+    </script>
+  </html>
+</DOCTYPE>

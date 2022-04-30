@@ -1,0 +1,21 @@
+<DOCTYPE HTML>
+  <html>
+    <head>
+      <title>Dom</title>
+    </head>
+    <body>
+      <h1>This is example of Dom</h1>
+      <p id="demo"></p>
+
+      <h3 class="cl"></h3>
+      <p></p>
+    </body>
+    <script>
+      let x = (document.getElementById("demo").innerHTML = "This is id ");
+      let c = document.getElementsByClassName("cl");
+      let p = document.getElementsByTagName("p");
+      c[0].innerHTML = "This is class ";
+      p[1].innerHTML = "This is Element";
+    </script>
+  </html>
+</DOCTYPE>

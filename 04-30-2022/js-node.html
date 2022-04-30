@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nodes</title>
+  </head>
+  <body>
+    <h1>This is Example of node</h1>
+
+    <div id="di">
+      <h3 id="p1">This is a paragraph.</h3>
+      <h3 id="p2">This is another paragraph.</h3>
+    </div>
+
+    <script>
+      const par = document.createElement("h3");
+      const node = document.createTextNode("This is new.");
+      par.appendChild(node);
+    document.getElementById("di").appendChild(par);
+     
+    </script>
+  </body>
+</html>

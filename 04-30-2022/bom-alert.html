@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BOM Alert</title>
+  </head>
+  <body>
+    <h1>This is Example of BOM Alert</h1>
+<button onclick=my()>click</button>
+    <script>
+        function my() {
+          var txt;
+          if (confirm("Press a Button")){
+            txt = "You pressed OK!";
+          } else {
+            txt = "You pressed Cancel!";
+          }
+          document.write(txt)
+        }
+        </script>
+  </body>
+</html>
