@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>API</title>
+</head>
+
+<body>
+  <h1 id="ab">This is Example of API</h1>
+  <button onclick=my()>click</button>
+  <p id="demo"></p>
+  <script>
+    x = document.getElementById("demo");
+    function my() {
+      try {
+        navigator.geolocation.getCurrentPosition(showPosition);
+      } catch {
+        x.innerHTML = err;
+      }
+    }
+    function showPosition(position) {
+      x.innerHTML = "lat" + position.coords.latitude + "<br> longitude" + position.cooeds.longitude;
+    }
+  </script>
+</body>
+
+</html>

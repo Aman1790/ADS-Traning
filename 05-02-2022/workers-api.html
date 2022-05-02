@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2> Web Workers API</h2>
+<p>Count numbers: <output id="result"></output></p>
+<button onclick="star()">Start Worker</button> 
+<button onclick="stop()">Stop Worker</button>
+
+<script>
+let w;
+
+function star() {
+  if(typeof(w) == "undefined") {
+    w = new Worker("demo_workers.js");
+  }
+  w.onmessage = function(event) {
+    document.getElementById("result").innerHTML = event.data;
+  };
+}
+
+function stop() { 
+  w.terminate();
+  w = undefined;
+}
+</script>
+
+</body>
+</html>

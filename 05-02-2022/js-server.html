@@ -1,0 +1,24 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2> converting object to Json data</h2>
+    <p id="demo"></p>
+
+    <script>
+        const ob = { name: "John", age: 31, city: "New York" };
+        const my = JSON.stringify(ob);
+        document.write(my);
+
+
+        js = JSON.parse(my);
+        document.write("<br> This is json data which is converted into js   =>  "+js);
+        window.location = "#" + my;
+        </script>
+
+</body>
+
+</html>

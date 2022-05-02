@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web froms Api</title>
+  </head>
+  <body>
+    <h1 id="ab">This is Example of Web Forms</h1>
+    <input type ="number" max="100" min="10" required id="inp">
+<button onclick=my()>click</button>
+<p id="demo"></p>
+    <script>
+     function my(){
+         let obj=document.getElementById("inp");
+            if (obj.value<100) {
+             document.getElementById("demo").innerHTML="Enter a valid input";
+         } else{
+             document.getElementById("demo").innerHTML="input ok "
+         }
+     }
+        </script>
+  </body>
+</html>

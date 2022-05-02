@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Web Fetch Api</title>
+</head>
+
+<body>
+    <h1 id="ab">This is Example of Fetch  Api</h1>
+
+    <button onclick=my()>click</button>
+
+    <script>
+        getText("fetch_info.txt");
+        
+        async function getText(file) {
+          let a = await fetch(file);
+          let b = await a.text();
+          document.getElementById("demo").innerHTML = b;
+        }
+        </script>
+</body>
+
+</html>
