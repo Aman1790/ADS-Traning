@@ -1,0 +1,26 @@
+#btn{
+  color:white;
+  background-color: red;
+  border:none;
+}
+.App{
+  margin:30px;
+}
+.had{
+  background-color:wheat;
+display: grid;
+grid-template-columns: 108px 137px 1fr;
+text-align: center;
+}
+#but{
+  background-color: purple;
+  color: white;
+  font-size: 25px;
+  margin: 10px;
+  border-radius: 16px;
+  float: right;
+}
+.nam{
+  align-content: flex-start;
+  margin-left: 20px;
+}

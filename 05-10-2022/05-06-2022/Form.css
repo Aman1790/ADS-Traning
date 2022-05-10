@@ -1,0 +1,8 @@
+.main_form{
+    width:800px;
+    padding: 20px;
+    margin-left:350px;
+    background-color: blueviolet;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
