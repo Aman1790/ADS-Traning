@@ -1,0 +1,42 @@
+import { useState } from "react";
+const useInputForm =(ref)=>{
+
+    const [enteredValue, setEnteredValue] = useState(true)
+    const [touched, setTouched] = useState(false)
+     const [isvalid, setIsvalid] = useState(true)
+    const [formisvalid, setFormisvalid] = useState(false)
+
+    // const valueIsValid = enteredValue.trim() !== '' ;
+    const haserror = ! valueIsValid && touched;
+handelChange()
+    const handelChange = () => {
+        if (ref.current.value.length === 0) {
+          setFormisvalid(true)
+          setIsvalid(false)
+          return;
+        }
+        else if (!ref.current?.value?.includes('@')) {
+          setFormisvalid(true)
+          setIsvalid(false)
+          return
+        }
+        else if (ref.current?.value?.includes('@')) {
+          setFormisvalid(true)
+          setTouched(true)
+          setIsvalid(true)
+          return;
+        }
+      }
+
+    return{   
+        value : {
+            enteredValue:enteredValue,
+            haserror,
+            touched,
+            formisvalid,
+            isvalid
+        }  
+    }
+}
+
+export default useInputForm;
